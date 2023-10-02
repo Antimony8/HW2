@@ -69,7 +69,7 @@ def inorder_traversal(node):
 # Main program
 if __name__ == "__main__":
     # Generate a list of random 2D lines for demonstration
-    lines = [Line((-3,2),(3,2)), Line((-2,2),(-2,-3)), Line((2,2),(2,-3)), Line((-2,-2),(2,-2)),   Line((0,1),(0,0)), Line((1,0),(0,0)), Line((1,1),(0,1))]
+    lines = [Line(random.randint(0, 10), random.randint(11, 20)) for _ in range(10)]
     
     # Construct the BSP tree
     root = construct_bsp_tree(lines)
